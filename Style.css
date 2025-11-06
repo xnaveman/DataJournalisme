@@ -7,18 +7,18 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Arial', sans-serif;
-    background-color: #FDF8E2 !important; /* Couleur de fond de la page d'accueil */
+    background-color: #FEFBF6 !important;
 }
 
 article {
-    background-color: #ffffff; /* Couleur de fond des articles */
-    padding: 20px; /* Ajout d'un peu de padding pour les articles */
-    border-radius: 10px; /* Coins arrondis pour les articles */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 header {
-    background-color: #504E76; /* Couleur de fond du header */
-    color: #ffffff; /* Texte en blanc */
+    background-color: #504E76;
+    color: #ffffff;
     padding: 20px;
     text-align: center;
 }
@@ -29,28 +29,28 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     gap: 20px;
     padding: 20px;
-    align-items: start; /* Les cartes prennent la hauteur de leur contenu */
+    align-items: start;
 }
 
 .card {
-    background-color: #ffffff; /* Couleur de fond des cartes */
+    background-color: #ffffff;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Ombre plus marquée */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     padding: 20px;
-    transition: transform 0.2s; /* Animation au survol */
+    transition: transform 0.2s;
 }
 
 .card:hover {
-    transform: scale(1.02); /* Effet de zoom au survol réduit */
+    transform: scale(1.02);
 }
 
 footer {
     width: 100%;
-    background-color: #504E76; /* Couleur de fond du footer */
-    color: #ffffff; /* Texte en blanc */
+    background-color: #504E76;
+    color: #ffffff;
     text-align: center;
     padding: 10px 0;
-    margin-top: auto; /* Permet au footer de se placer en bas sans être fixe */
+    margin-top: auto;
 }
 
 .flourish-container {
@@ -66,38 +66,33 @@ footer {
     min-width: 100px;
 }
 
-/* Styles pour les boutons */
 .btn {
     display: inline-block;
     padding: 10px 20px;
     margin-top: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #A3B565; /* Couleur verte */
-    color: #ffffff; /* Texte en blanc */
+    background-color: #C4C3E3;
+    color: #ffffff;
     text-decoration: none;
     text-align: center;
     transition: background-color 0.3s;
 }
 
 .btn:hover {
-    background-color: #A3B565; /* Couleur plus foncée au survol */
+    background-color: #C4C3E3;
 }
 
 a {
-    color: #504E76 !important; /* Couleur des liens */
+    color: #504E76 !important;
 }
 
 .home-link {
     display: inline-block;
     padding: 10px 15px;
-    background-color: #C4C3E3; /* Couleur de fond */
-    color: #504E76; /* Texte en blanc */
-    border-radius: 5px; /* Coins arrondis */
-    text-decoration: none; /* Pas de soulignement */
+    background-color: #C4C3E3;
+    color: #504E76;
+    border-radius: 5px;
+    text-decoration: none;
     transition: background-color 0.3s;
-}
-
-.home-link:hover {
-    background-color: #FDF8E2; /* Couleur plus foncée au survol */
 }
