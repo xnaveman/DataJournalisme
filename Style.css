@@ -6,13 +6,13 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+    background-color: #FDF8E2 !important; /* Couleur de fond de la page d'accueil */
 }
 
 header {
-    background-color: #8ea2fb;
-    color: #000000;
+    background-color: #504E76; /* Couleur de fond du header */
+    color: #ffffff; /* Texte en blanc */
     padding: 20px;
     text-align: center;
 }
@@ -27,20 +27,24 @@ main {
 }
 
 .card {
-    background-color: #fff;
+    background-color: #ffffff; /* Couleur de fond des cartes */
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    padding : 20px
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Ombre plus marquée */
+    padding: 20px;
+    transition: transform 0.2s; /* Animation au survol */
+}
+
+.card:hover {
+    transform: scale(1.02); /* Effet de zoom au survol réduit */
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
     width: 100%;
-    background-color: #8ea2fb;
-    color: #000000;
+    background-color: #504E76; /* Couleur de fond du footer */
+    color: #ffffff; /* Texte en blanc */
     text-align: center;
     padding: 10px 0;
+    margin-top: auto; /* Permet au footer de se placer en bas sans être fixe */
 }
 
 .flourish-container {
@@ -52,6 +56,24 @@ footer {
 }
 
 .flourish-container .flourish-embed {
-    flex: 1 1 30%;
-    min-width: 300px;
+    flex: 1 1 10%;
+    min-width: 100px;
+}
+
+/* Styles pour les boutons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #A3B565; /* Couleur verte */
+    color: #ffffff; /* Texte en blanc */
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #A3B565; /* Couleur plus foncée au survol */
 }
