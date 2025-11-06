@@ -28,12 +28,15 @@ header {
     color: #ffffff;
     padding: 2rem 2rem 1.5rem;
     border-bottom: 1px solid #e5e5e5;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 100;
     backdrop-filter: blur(10px);
     background-color: rgba(10, 10, 10, 0.95);
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform, padding;
 }
 
 header.scrolled {
@@ -52,7 +55,7 @@ header h1 {
     letter-spacing: -0.02em;
     margin-bottom: 0.5rem;
     color: #ffffff;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 header.scrolled h1 {
@@ -66,13 +69,14 @@ header p {
     font-weight: 300;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 1;
+    max-height: 50px;
 }
 
 header.scrolled p {
     opacity: 0;
-    height: 0;
+    max-height: 0;
     margin: 0;
     overflow: hidden;
 }
@@ -109,6 +113,7 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 4rem 2rem;
+    padding-top: calc(4rem + 120px); /* Espace pour le header fixe */
 }
 
 /* ===== HOMEPAGE GRID ===== */
@@ -117,6 +122,7 @@ main.home-grid {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 3rem;
     padding: 4rem 2rem;
+    padding-top: calc(4rem + 120px); /* Espace pour le header fixe */
 }
 
 /* ===== CARDS (Homepage) ===== */
